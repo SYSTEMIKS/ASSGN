@@ -19,8 +19,11 @@ Displays customer testimonials about their experience with Original Trombones.
 Allows users to submit their own testimonials through a user-friendly form.
 Responsive Design:
 
-The website is designed to be mobile-friendly and accessible on various devices.
+The website is designed to be
+mobile-friendly and accessible on various devices.
 Technologies Used:
 HTML for structure.
 CSS for styling and layout.
 JavaScript for interactivity (handling forms and dynamically updating content).
+ ![Screenshot (16)](https://github.com/user-attachments/assets/ef254d3a-6eb8-4dc1-8e6c-7e79db5f0899)![Screenshot (17)](https://github.com/user-attachments/assets/01512c2d-903b-4efa-8542-c7a9f71dbe9d)
+![Screenshot (18)](https://github.com/user-attachments/assets/d756bdb4-54d5-4513-98b0-fe69a03f22ca)
