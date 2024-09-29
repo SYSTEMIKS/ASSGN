@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reviews.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    crossorigin="anonymous"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"/>
+    <title>TESTIMONIALS</title>
+</head>
+<body>
+    <section>
+        <div class="background-image"></div>
+        <div class="container">
+            <span class="custom-span">Testimonials</span>
+            <p>Here's what our customers are saying about Original Trombones:</p>
+        </div>
+
+        <div id="testimonial-list" class="testimonial-list">
+            <!-- Testimonials will be dynamically added here -->
+        </div>
+
+        <div class="container testimonial-form">
+            <h2>Submit Your Testimonial</h2>
+            <form id="testimonialForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="message">Testimonial:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p id="footer-text">Copyright <span id="current-year"></span>, Original Trombones<sup>&#8482;</sup></p>
+    </footer>
+
+    <script src="reviews.js"></script>
+</body>
+</html>

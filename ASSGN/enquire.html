@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="enquire.css">
+    <title>PRODUCT ENQUIRY</title>
+</head>
+<body>
+    <div class="container">
+        <span class="custom-span">Original Trombones<sup>&#8482;</sup></span>
+    </div>
+
+    <section id="enquiry-form">
+        <h2>Product Enquiry Form</h2>
+        <form action="submit_enquiry.php" method="post" enctype="multipart/form-data">
+            <!-- Text Input -->
+            <label for="name">Name:</label>
+            <input placeholder="John Deer" type="text" id="name" name="name" required><br><br>
+
+            <!-- Email Input -->
+            <label for="email">Email:</label>
+            <input placeholder="someone@example.com" type="email" id="email" name="email" required><br><br>
+
+            <!-- Radio Buttons -->
+            <label>Type of Inquiry:</label><br>
+            <input type="radio" id="product_inquiry" name="inquiry_type" value="Product Inquiry" checked>
+            <label for="product_inquiry">Product Inquiry</label><br>
+            <input type="radio" id="support_inquiry" name="inquiry_type" value="Support Inquiry">
+            <label for="support_inquiry">Support Inquiry</label><br><br>
+
+            <!-- Select/Combo Box -->
+            <label for="trombone">Select Trombone:</label>
+            <select id="trombone" name="trombone" required>
+                <option value="Tenor Trombone">Tenor Trombone</option>
+                <option value="Bass Trombone">Bass Trombone</option>
+                <option value="Valve Trombone">Valve Trombone</option>
+            </select><br><br>
+
+            <!-- Checkboxes -->
+            <label>Select Additional Accessories:</label><br>
+            <input type="checkbox" id="case" name="accessories" value="Trombone Case">
+            <label for="case">Trombone Case</label><br>
+            <input type="checkbox" id="cleaning_kit" name="accessories" value="Cleaning Kit">
+            <label for="cleaning_kit">Cleaning Kit</label><br>
+            <input type="checkbox" id="mouthpiece" name="accessories" value="Extra Mouthpiece">
+            <label for="mouthpiece">Extra Mouthpiece</label><br><br>
+
+            <!-- Text Area -->
+            <label for="message">Message:</label><br>
+            <textarea placeholder="Please describe the specifications of the instrument you have ordered." id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+            <!-- Date Picker -->
+            <label for="preferred_date">Preferred Delivery/ Event Date:</label>
+            <input type="date" id="preferred_date" name="preferred_date"><br><br>
+
+            <!-- File Upload -->
+            <label for="file_upload">Upload Reference Document (if any):</label>
+            <input type="file" id="file_upload" name="file_upload"><br><br>
+
+            <!-- Range Slider -->
+            <label for="price_range">Select Your Budget Range:</label>
+            <input type="range" id="price_range" name="price_range" min="500" max="1500" step="100">
+            <span id="range_value"></span><br><br>
+
+            <!-- Buttons -->
+            <section>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </section>
+        </form>
+    </section>
+
+    <div class="contact-us">
+        <a href="about.html" target="_blank" class="btn">Contact Us</a>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
